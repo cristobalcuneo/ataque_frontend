@@ -1,0 +1,51 @@
+.player-card {
+    margin: 20px;
+    /* max-width: 300px; */
+    height: 200px;
+    width: 250px;
+
+    text-align: center;
+    font-size: 50px;
+    text-align: center;
+    /* border-radius: 20px; */
+    /* border: 7px solid #3C2A21;
+    background-color: #FFFFFF; */
+    color: #3C2A21;
+    transition-duration: 0.5s;
+}
+
+.MG {
+    border: 7px solid #CC8313;
+    background-color: #EBC284;
+}
+
+.MG h3 {
+    color: #CC8313;
+}   
+
+.SDD {
+    border: 7px solid #B21717;
+    background-color: #D98D8D;
+}
+
+.SDD h3 {
+    color: #B21717;
+}   
+
+.NAU {
+    border: 7px solid #1D7536;
+    background-color: #89BB97;
+}
+
+.NAU h3 {
+    color: #1D7536;
+}   
+
+.SRG {
+    border: 7px solid #52216B;
+    background-color: #A07CB3;
+}
+
+.SRG h3 {
+    color: #52216B;
+}   

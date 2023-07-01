@@ -1,0 +1,28 @@
+.board {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.ourteam-content {
+    text-align: center;
+}
+
+.ourteam-info {
+    width: 50%;
+    margin: 40px auto;
+    color: #FFFFFF;
+    display: block;
+    padding: 10px;
+    background-color: #3C2A21;
+}
+
+.ourteam-content .web {
+    font-size: 100px;
+    line-height: 100%;
+    margin: 70px;
+}

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Jumanji;
+    src: url(../assets/fonts/heavy_dock11.otf);
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+/* body {
+    background-image: none;
+} */
+
+.container{
+    /* height:100vh; */
+    /* background-color:red; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container .sidebar{
+    position:relative;
+    background-color:#3C2A21;
+    height:100%;
+    width:250px;
+    z-index:10;
+    text-align:center;
+    color: #FFFFFF
+    /* box-shadow:0px 15px 30px rgba(0,0,0,0.1); */
+}
+.sidebar li:nth-child(0){
+    padding:30px 0px;
+}
+
+/* .active {
+    background-color: ;
+} */
+
+.sidebar li:hover:nth-child(0){
+    padding:30px 0px;
+    background-color:transparent;
+    color:#1c110c;
+}
+
+.sidebar li{
+    padding:12px;
+    cursor:pointer;
+    /* transition:all 0.5s; */
+    /* letter-spacing:1px; */
+    display:flex;
+    flex-direction:column;
+    transition-duration: 0.3s;
+}
+
+.sidebar li:hover{
+    background-color:#1c110c;
+    padding:12px;
+    color: #FFFFFF;
+    transition-duration: 0.s;
+    
+}
+
+.container .content{
+    
+    text-align: left;
+    padding: 2% 5% 5% 5%;
+    min-height: 79vh;
+    width: 70%;
+    max-width: 60vw;
+    color: #3C2A21
+
+}
+
+.container .content p{
+    padding: 20px;
+    background-color: #E2D4AE;
+
+}
+
+.instructions-content h1{
+    font-family: Jumanji;
+}
+
+.active-instruction {
+    background-color:#1c110c;
+}
+
+@media (max-width: 1000px) {
+
+    .container .content{
+        text-align: left;
+    }
+    .container .content p{
+        text-align: left;
+    }
+
+    .container .sidebar{
+        position:relative;
+        background-color:#4c4c4c;
+        height:100%;
+        width:20vw;
+        z-index:10;
+        text-align:center;
+    }
+}

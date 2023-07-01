@@ -1,0 +1,71 @@
+/* .login {
+    text-align: center;
+} */
+
+.login-form {
+    padding: 50px;
+    margin: 20px;
+    background-color: #C3E1E4;
+    border: 7px solid #689a9f;
+    height: 600px;
+    width: 500px;
+    color: #3C2A21;
+    font-weight: 600;
+}
+
+.h-login-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.login-form input {
+    display: block;
+    width: 300px;
+    height: 30px;
+    border: none;
+    font-size: 17px;
+    background-color: #C3E1E4;
+    border-bottom: 2px solid #689a9f;
+    transition-duration: 1s;
+    font-size: 20px;
+    color: #3C2A21;
+}
+
+.login-form input:focus {
+    height: 40px;
+    transition-duration: 1s;
+    pointer-events: none;
+    outline: none;
+    padding-top: 20px;
+    /* transform: translate(0px, 100px) */
+}
+
+.login-form label {
+    position: absolute;
+    z-index: 10;
+    transition-duration: 1s;
+    /* transform: translate(0px, -30px) */
+
+}
+
+.login-fields {
+    padding: 50px 0px;
+    position: relative;
+}
+
+.field {
+    padding: 10px;
+}
+
+.login-fields .field .filled {
+    height: 40px;
+    transition-duration: 1s;
+    padding-top: 20px;
+  }
+
+.label-filled {
+    color: #689a9f;
+    transition-duration: 1s;
+    /* transform: scale(0.9); */
+}

@@ -1,0 +1,55 @@
+.board-container-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+path {
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+path:hover {
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.board-page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.first-players {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.second-players {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.MG.active-player {
+    background-color: #CC8313;
+}
+
+.SDD.active-player {
+    background-color: #B21717;
+}
+
+.NAU.active-player {
+    background-color: #1D7536;
+}
+
+.SRG.active-player {
+    background-color: #52216B;
+}
