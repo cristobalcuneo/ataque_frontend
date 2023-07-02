@@ -5,6 +5,7 @@ import Footer from '../common/Footer';
 import $ from 'jquery';
 import axios from 'axios';
 import { AuthContext } from '../auth/AuthContext';
+import API_URL from "../common/config";
 
 function Login() {
   const {token, setToken} = useContext(AuthContext);
@@ -14,7 +15,7 @@ function Login() {
   // POST con datos de Login
   const handleSubmit = async(event) => {
     event.preventDefault();
-    axios.post(`https://ataque-api.onrender.com/auth/login`, {
+    axios.post(`${API_URL}/auth/login`, {
       mail: email,
       password: password
     }).then((response) => {
