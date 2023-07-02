@@ -14,7 +14,7 @@ function Login() {
   // POST con datos de Login
   const handleSubmit = async(event) => {
     event.preventDefault();
-    axios.post(`${import.meta.env.VITE_BACKEND_URL}/auth/login`, {
+    axios.post(`https://ataque-api.onrender.com/auth/login`, {
       mail: email,
       password: password
     }).then((response) => {
