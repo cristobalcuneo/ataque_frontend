@@ -1,18 +1,40 @@
 import './PlayerCard.css'
+import { useState, useEffect, useContext } from "react";
+import axios from "axios";
+import { AuthContext } from "../auth/AuthContext";
+import API_URL from "./../common/config"
 
-export default function playerCard({playerName, playerNumber, active}) {
-    // var teamColors = {
-    //     "MG": ["#CC8313", "#EBC284"],
-    //     "SDD": ["#B21717", "#D98D8D"],
-    //     "NAU": ["#1D7536", "#89BB97"],
-    //     "SRG": ["#52216B", "#A07CB3"],
-    // }
-    
+
+export default function playerCard({playerName, playerNumber, active, territories}) {
+
+    const {token} = useContext(AuthContext);
+    const [idTeam, setIdTeam] = useState()
+    const [teamName, setTeamName] = useState()
+
+    useEffect(() => {
+        axios
+          .get(`${API_URL}/teams/${playerNumber}`)
+          .then(response => {
+            // Handle the response data
+            console.log(response.data, `info player ${playerNumber} playercard`);
+            console.log(response.data.id)
+            console.log(response.data.color)
+            setIdTeam(response.data.id)
+            setTeamName(response.data.color)
+          })
+
+          .catch(error => {
+            // Handle the error
+            console.error(error);
+          });
+      }, []);
+
     const cardClasses = "player-card " + playerName + " player-" + playerNumber + " " + active
     return(
         <div className={cardClasses}>
             <div className="player-card-container">
-                <h3>{playerName}: <span className='player-number'>{playerNumber}</span></h3>
+                <h3>{playerName}</h3>
+                <p>Conquistas: {territories}</p>
             </div>
         </div>
     )

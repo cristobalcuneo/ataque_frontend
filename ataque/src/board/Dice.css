@@ -5,7 +5,6 @@
     font-size: 50px;
     text-align: center;
     margin: 0px auto;
-    /* border-radius: 20px; */
     border: 7px solid #3C2A21;
     background-color: #FFFFFF;
     color: #3C2A21;
@@ -13,10 +12,9 @@
 }
 
 .dice p {
-    margin: 15px 0px;
     color: #3C2A21;
-
-
+    margin-top: 100px;
+    padding-top: 30px;
 }
 
 .dice-rolling {

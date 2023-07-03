@@ -13,8 +13,7 @@ const LogoutButton = () => {
 
   return (
     <>
-        {/* {msg.length > 0 && <div className="successMsg"> {msg} </div>} */}
-        <a onClick={handleLogout}>
+        <a onClick={handleLogout} className={'nav-right'}>
         Cerrar sesión
         </a>
     </>

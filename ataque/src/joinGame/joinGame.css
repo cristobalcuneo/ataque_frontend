@@ -1,0 +1,29 @@
+.joingame-container {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+button {
+    margin: 30px;
+}
+
+.games-list-item {
+    color: #3C2A21;
+    display: inline;
+}
+
+.game-list-div {
+    background-color: aqua;
+    margin: 10px auto;
+    padding: 10px;
+    height: 100px;
+    width: 1000px;
+    background-color: #d0d0d0;
+    border: 7px solid #797979;
+}
+
+.boton-jugar {
+    width: 70px;
+}

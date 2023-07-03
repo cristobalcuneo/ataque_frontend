@@ -71,30 +71,29 @@ export default function Instructions() {
         </div>
     );
 
-
     return (
         <>
         <Navbar />
-        <div className="container">
+            <div className="container">
 
-        <div className='div-sidebar'>
-        <ul className="sidebar">
-            <li onClick={() => handleSelect('intro')} className={selected === 'intro' ? 'active-instruction': ''}><span>Introducción</span></li>
-            <li onClick={() => handleSelect('pasos')} className={selected === 'pasos' ? 'active-instruction': ''}><span>Pasos previos al juego</span></li>
-            <li onClick={() => handleSelect('juego')} className={selected === 'juego' ? 'active-instruction': ''}><span>El juego</span></li>
-            <li onClick={() => handleSelect('atacar')} className={selected === 'atacar' ? 'active-instruction': ''}><span>¿Cómo atacar?</span></li>
-            <li onClick={() => handleSelect('cambios')} className={selected === 'cambios' ? 'active-instruction': ''}><span>Cambios</span></li>
-        </ul>
-        </div>
-        <div className="content instructions-content">
-            {selected === 'intro' && reglas}
-            {selected === 'pasos' && pasos}
-            {selected === 'juego' && juego}
-            {selected === 'atacar' && atacar}
-            {selected === 'cambios' && cambios}
-        </div>
+                <div className='div-sidebar'>
+                    <ul className="sidebar">
+                        <li onClick={() => handleSelect('intro')} className={selected === 'intro' ? 'active-instruction': ''}><span>Introducción</span></li>
+                        <li onClick={() => handleSelect('pasos')} className={selected === 'pasos' ? 'active-instruction': ''}><span>Pasos previos al juego</span></li>
+                        <li onClick={() => handleSelect('juego')} className={selected === 'juego' ? 'active-instruction': ''}><span>El juego</span></li>
+                        <li onClick={() => handleSelect('atacar')} className={selected === 'atacar' ? 'active-instruction': ''}><span>¿Cómo atacar?</span></li>
+                        <li onClick={() => handleSelect('cambios')} className={selected === 'cambios' ? 'active-instruction': ''}><span>Cambios</span></li>
+                    </ul>
+                </div>
+                <div className="content instructions-content">
+                    {selected === 'intro' && reglas}
+                    {selected === 'pasos' && pasos}
+                    {selected === 'juego' && juego}
+                    {selected === 'atacar' && atacar}
+                    {selected === 'cambios' && cambios}
+                </div>
 
-        </div>
+            </div>  
         <Footer />
     </>
     )

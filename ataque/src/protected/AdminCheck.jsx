@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../auth/AuthContext";
+import API_URL from "./../common/config"
 
 function AdminCheck() {
     const {token} = useContext(AuthContext);
@@ -8,7 +9,7 @@ function AdminCheck() {
 
     const config = {
         "method": "get",
-        "url": `${import.meta.env.VITE_BACKEND_URL}/auth`,
+        "url": `${API_URL}/auth`,
         "headers": {
             "Authorization": `Bearer ${token}`
 

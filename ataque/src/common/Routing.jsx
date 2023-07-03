@@ -18,7 +18,7 @@ function Routing() {
                 <Route path='/mainpage' element={<MainPage/>}/>
                 <Route path='/ourteam' element={<OurTeam/>}/>
                 <Route path='/instructions' element={<Instructions/>}/> 
-                <Route path='/board' element={<DynamicBoard/>}/> 
+                <Route path='/board/:gameId' element={<DynamicBoard/>}/> 
                 <Route path='/login' element={<Login/>}/> 
                 <Route path='/register' element={<Register/>}/> 
                 <Route path='/joingame' element={<JoinGame/>}/> 

@@ -9,7 +9,6 @@
 .gamecard-img img {
     width: 400px;
     background-color: white;
-
 }
 
 .gamecard-container {
@@ -22,7 +21,6 @@
     background-color: #3C2A21;
     border: 7px solid #1c110c;
     color: #3C2A21;
-    /* opacity: 0.5; */
     transition-duration: 1s;
     color: aliceblue;
 }
@@ -30,10 +28,9 @@
 .mainpage-gamecard:hover {
     transition-duration: 1s;
     opacity: 1;
-    cursor: url("../../assets/img/bomb.png") 30 30, auto;
+    cursor: url("../../public/assets/img/bomb.png") 30 30, auto;
     background-color: #1c110c;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
-
 }
 
 .mainpage-gamecard h2 {

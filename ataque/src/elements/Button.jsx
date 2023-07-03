@@ -6,5 +6,4 @@ export default function Button({Text}) {
             { Text }
         </button>
     )
-
 }

@@ -40,16 +40,57 @@ path:hover {
 
 .MG.active-player {
     background-color: #CC8313;
+    color: #EBC284;
+}
+
+.MG.active-player h3{
+    color: #EBC284;
 }
 
 .SDD.active-player {
     background-color: #B21717;
+    color: #D98D8D;
 }
+
+.SDD.active-player h3{
+    color: #D98D8D;
+}
+
 
 .NAU.active-player {
     background-color: #1D7536;
+    color: #89BB97;
 }
+.NAU.active-player h3{
+    color: #89BB97;
+}
+
 
 .SRG.active-player {
     background-color: #52216B;
+    color: #A07CB3;
+}
+
+.SRG.active-player h3{
+    color: #A07CB3;
+}
+
+.roll-dices {
+    width: 265px
+}
+
+.game-info {
+    margin: 20px;
+    background-color: #d0d0d0;
+    border: 7px solid #797979;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    font-size: 25px;
+    color: #3C2A21;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 2s;
 }

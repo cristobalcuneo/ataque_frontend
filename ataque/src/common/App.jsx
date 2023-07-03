@@ -6,7 +6,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navbar /> */}
       <div className='Title'>
         <h1 className='title'>ATAQUE</h1>
       </div>

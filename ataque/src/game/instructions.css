@@ -1,6 +1,6 @@
 @font-face {
     font-family: Jumanji;
-    src: url(../../assets/fonts/heavy_dock11.otf);
+    src: url(../../public/assets/fonts/heavy_dock11.otf);
 }
 
 *{
@@ -8,13 +8,7 @@
     margin:0;
 }
 
-/* body {
-    background-image: none;
-} */
-
 .container{
-    /* height:100vh; */
-    /* background-color:red; */
     position: relative;
     display: flex;
     flex-direction: row;
@@ -29,15 +23,11 @@
     z-index:10;
     text-align:center;
     color: #FFFFFF
-    /* box-shadow:0px 15px 30px rgba(0,0,0,0.1); */
 }
+
 .sidebar li:nth-child(0){
     padding:30px 0px;
 }
-
-/* .active {
-    background-color: ;
-} */
 
 .sidebar li:hover:nth-child(0){
     padding:30px 0px;

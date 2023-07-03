@@ -2,29 +2,48 @@ import { useState } from "react";
 import GamesList from './gamesList'
 import Navbar from '../common/Navbar'
 import Footer from '../common/Footer'
+import axios from "axios";
+import './joinGame.css'
+import API_URL from "./../common/config"
 
 export default function joinGame() {
-
 
     const PORT = 4000
 
     const [games, setGames] = useState([])
 
-    async function g() { // Función que busca la multiplicacion
-        console.log("mult")
-        const response = await fetch(`http://localhost:${PORT}/games`);
-        console.log(response, "response")
-        const data = await response.json();
-        console.log(data, "data")
-        return data
-      }
+         // function that gets games
+    async function g() {
+      const response = await fetch(`${API_URL}/games`);
+      const data = await response.json();
+      return data
+    }
 
-      async function getGames() {
+    // get games for list
+    async function getGames() {
+      try {
+          const result = await g();
+          function checkStarted(game) {
+            return !game.gameStarted;
+          }
+          setGames(result)
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+      // create game
+      async function createGame() {
         try {
-            console.log("hola")
-            const result = await g();
-            console.log(result)
-            setGames(result)
+          axios
+            .post(`${API_URL}/games/createGame`, {
+              code: Math.random().toString(36).substring(2, 8)
+            })
+            .then(response => {
+            })
+            .catch(error => {
+              console.log(error)
+            })
         } catch (error) {
           console.error(error);
         }
@@ -32,8 +51,11 @@ export default function joinGame() {
     return (
         <div>
           <Navbar />
-          <button onClick={() => getGames()}>Obtener partidas</button>
-          <GamesList key={1} games={games}/>
+            <div className="joingame-container">
+              <button onClick={() => getGames()}>Obtener partidas</button>
+              <button onClick={() => createGame()}>Crear partida</button>
+            </div>
+            <GamesList key={1} games={games}/>
           <Footer />
         </div>
     )

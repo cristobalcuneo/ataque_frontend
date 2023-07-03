@@ -9,7 +9,6 @@ export default function MainPageGameCard({imgSrc, name, description}) {
                 </div>
                 <div className='gamecard-text'>
                     <h2>{name}</h2>
-                    {/* <p>{description}</p> */}
                 </div>
             </div>
         </div>

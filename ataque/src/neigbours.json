@@ -1,0 +1,143 @@
+{
+    "ingenieria": [
+            "pedadogia",
+            "enfermeria",
+            "college",
+            "pedadogia"
+        ]
+      ,     
+"enfermeria":[
+            "ingenieria",
+            "pedadogia",
+            "comercial",
+            "quimica"
+        ],
+"pedadogia": [
+            "ingenieria",
+            "enfermeria",
+            "comercial",
+            "arquitectura",
+            "derecho"
+        ],
+"comercial":[
+            "pedadogia",
+            "enfermeria",
+            "quimica",
+            "cs_salud",
+            "agricultura",
+            "deportes"
+        ],
+"quimica":[
+            "enfermeria",
+            "comercial",
+            "college",
+            "cs_salud"
+        ],
+"college":[
+            "ingenieria",
+            "quimica",
+            "cs_salud"
+        ],
+"cs_salud":[
+            "quimica",
+            "college",
+            "deportes"
+        ],
+"agricultura":[
+            "comercial",
+            "deportes"
+        ],
+ "deportes":[
+            "comercial",
+            "cs_salud",
+            "agricultura",
+            "musica"
+        ],
+"pedadogia_bilingue":[
+            "ingenieria",
+            "servicios",
+            "pedadogia_basica"
+        ],
+"servicios":[
+            "pedadogia_bilingue",
+            "pedadogia_basica"
+        ],
+ "pedadogia_basica":[
+            "pedadogia_bilingue",
+            "servicios",
+            "estetica"
+        ],
+"estudios_urbanos":[
+            "diseno",
+            "patio_madera"
+        ],
+"diseno":[
+            "estudios_urbanos",
+            "patio_madera",
+            "arquitectura"
+        ],
+"patio_madera":[
+            "estudios_urbanos",
+            "diseno",
+            "arquitectura",
+            "cs_biologicas"
+        ],
+"arquitectura":[
+            "diseno",
+            "patio_madera",
+            "pedadogia"
+        ],
+ "cs_biologicas":[
+            "patio_madera",
+            "derecho",
+            "medicina"
+        ],
+"derecho":[
+            "pedadogia",
+            "cs_biologicas",
+            "medicina",
+            "comunicaciones",
+            "kinesiologia"
+        ],
+"medicina":[
+            "cs_biologicas",
+            "derecho",
+            "comunicaciones"
+        ],
+"comunicaciones":[
+            "medicina",
+            "derecho",
+            "kinesiologia"
+        ],
+"kinesiologia":[
+            "derecho",
+            "comunicaciones",
+            "filosofia"
+        ],
+ "teatro":[
+            "arte",
+            "filosofia"
+        ],
+"filosofia":[
+            "kinesiologia",
+            "teatro",
+            "estetica",
+            "musica"
+        ],
+"estetica":[
+            "pedadogia_basica",
+            "filosofia",
+            "arte",
+            "musica"
+        ],
+"musica":[
+            "filosofia",
+            "estetica",
+            "deportes"
+        ],
+    "arte": [
+        "teatro",
+        "estetica"
+    ]
+    
+}
