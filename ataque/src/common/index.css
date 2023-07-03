@@ -1,13 +1,13 @@
 @font-face {
   font-family: Egg;
-  src: url(../../public/assets/fonts/sense_egg.ttf);
+  src: url(../../assets/fonts/sense_egg.ttf);
 }
 
 body {
   margin: 0px;
   font-family: Open Sans;
   font-size: larger;
-  background-image: url('../../public/assets/img/wood.jpg');
+  background-image: url('../../assets/img/wood.jpg');
   background-size: 100vw 100vh;
   background-color: #884A39;
 

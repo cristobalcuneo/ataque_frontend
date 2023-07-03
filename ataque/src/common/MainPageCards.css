@@ -28,7 +28,7 @@
 .mainpage-gamecard:hover {
     transition-duration: 1s;
     opacity: 1;
-    cursor: url("../../public/assets/img/bomb.png") 30 30, auto;
+    cursor: url("../../assets/img/bomb.png") 30 30, auto;
     background-color: #1c110c;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }

@@ -15,12 +15,12 @@ function MainPage() {
                     <div className='gamecards-container'>
                         <p>Selecciona uno de los modos de juego</p>
                         <div className='gamecards-container-row'>
-                            <MainPageGameCard imgSrc={"./public/assets/img/w1.jpeg"} name={"ATAQUE"} description={""}/>
-                            <MainPageGameCard imgSrc={"./public/assets/img/w2.jpg"} name={"DEFENSA"} description={""}/>
+                            <MainPageGameCard imgSrc={"./assets/img/w1.jpeg"} name={"ATAQUE"} description={""}/>
+                            <MainPageGameCard imgSrc={"./assets/img/w2.jpg"} name={"DEFENSA"} description={""}/>
                         </div>
                         <div className='gamecards-container-row'>
-                            <MainPageGameCard imgSrc={"./public/assets/img/w3.jpg"} name={"AEREO"} description={""}/>
-                            <MainPageGameCard imgSrc={"./public/assets/img/w4.jpg"} name={"TANQUES"} description={""}/>
+                            <MainPageGameCard imgSrc={"./assets/img/w3.jpg"} name={"AEREO"} description={""}/>
+                            <MainPageGameCard imgSrc={"./assets/img/w4.jpg"} name={"TANQUES"} description={""}/>
                         </div>
                     </div>
                 </div>
