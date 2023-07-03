@@ -13,8 +13,9 @@
 
 .dice p {
     color: #3C2A21;
-    margin-top: 100px;
-    padding-top: 30px;
+    /* margin-top: 100px;
+    padding-top: 30px; */
+    margin-top: 12px;
 }
 
 .dice-rolling {
